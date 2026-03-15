@@ -1,0 +1,96 @@
+.sale-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sale-dashboard-toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.period-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--code-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.period-tab {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--text);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.period-tab:hover {
+  background: var(--social-bg);
+  color: var(--text-h);
+}
+
+.period-tab.active {
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.sale-dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.metric-card {
+  padding: 20px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.metric-label {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.metric-value {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-h);
+  font-family: var(--mono);
+}
+
+.metric-change {
+  font-size: 13px;
+}
+
+.metric-change.positive {
+  color: #059669;
+}
+
+.metric-change.negative {
+  color: #dc2626;
+}
+
+.sale-dashboard-placeholder {
+  padding: 48px 24px;
+  text-align: center;
+  background: var(--code-bg);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  color: var(--text);
+}
+
+.sale-dashboard-placeholder .hint {
+  font-size: 14px;
+  margin-top: 12px;
+  opacity: 0.85;
+}

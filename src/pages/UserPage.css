@@ -1,0 +1,20 @@
+.user-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.user-page-header {
+  margin-bottom: 28px;
+}
+
+.user-page-header h1 {
+  font-size: 24px;
+  margin: 0 0 6px;
+  color: var(--text-h);
+}
+
+.user-page-header p {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0;
+}
